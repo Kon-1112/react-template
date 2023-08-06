@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler", // モジュール解決をバンドラーに任せる
+    "allowImportingTsExtensions": true, // import文で拡張子を省略できるようにする
+    "resolveJsonModule": true, // import文でjsonファイルを読み込めるようにする
+    "isolatedModules": true, // ファイルごとにコンパイルを行う
+    "noEmit": true, // コンパイル結果を出力しない
+    "jsx": "react-jsx", // ReactのJSXをサポートする
+
+    /* Linting */
+    "strict": true, // 厳格な型チェックを行う
+    "noUnusedLocals": false, // 未使用のローカル変数を許可する
+    "noUnusedParameters": false, // 未使用のパラメータを許可する
+    "noFallthroughCasesInSwitch": true // switch文のcase文でのfallthroughを許可しない
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
